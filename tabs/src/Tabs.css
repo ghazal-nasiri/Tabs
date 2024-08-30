@@ -1,4 +1,4 @@
-nav{
+nav {
     position: fixed;
     top: 20px;
     left: 50%;
@@ -6,19 +6,21 @@ nav{
     list-style: none;
     z-index: 100;
     width: fit-content;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     gap: 15px;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 60px;
     background-color: #ffffff2d;
 }
 
-nav ul li{
+nav ul li {
     padding: 8px 12px;
     border-radius: 40px;
     font-size: 18px;
@@ -26,48 +28,49 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background-color: #16142c;
 }
 
-nav ul li.active{
+nav ul li.active {
     background-color: green;
 }
 
 
 
-.tab{
+.tab {
     width: 90%;
     max-width: 800px;
+    height: auto;
     content-visibility: hidden;
     opacity: 0;
     margin: 0 auto;
 }
 
-.tab.active{
+.tab.active {
     content-visibility: visible;
     opacity: 1;
     transition: 1s ease;
 }
 
-.tab .img-card{
+.tab .img-card {
     position: relative;
     width: fit-content;
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     object-fit: cover;
 }
 
-.tab .img-card img{
+.tab .img-card img {
     width: 100%;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 
 
-.img-card .country{
+.img-card .country {
     position: absolute;
     left: 0;
     bottom: -100%;
@@ -83,15 +86,10 @@ nav ul li.active{
     user-select: none;
     font-size: 70px;
     font-weight: 700;
-    text-shadow:  var(--text-shadow);
-    
+    text-shadow: var(--text-shadow);
+
 }
 
-.img-card:hover .country{
+.img-card:hover .country {
     bottom: 0;
 }
-
-
-
-
-
